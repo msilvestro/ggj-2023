@@ -18,6 +18,10 @@ namespace GGJ23
         {
             segmentContainer = new GameObject();
             rb = GetComponent<Rigidbody>();
+            foreach (Transform childTransform in transform)
+            {
+                childTransform.parent = segmentContainer.transform;
+            }
         }
 
         private void Start()
