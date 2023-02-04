@@ -7,6 +7,9 @@ namespace GGJ23
         [SerializeField]
         private float moveSpeed = 1f;
 
+        [SerializeField]
+        private float rotationSpeed = 1f;
+
         private Rigidbody rb;
 
         private Vector3 movementInput;
@@ -26,7 +29,9 @@ namespace GGJ23
         private void FixedUpdate()
         {
             Vector3 moveVector = transform.TransformDirection(movementInput) * moveSpeed;
-            rb.velocity = new Vector3(moveVector.x, rb.velocity.y, moveVector.z);
+            // rb.velocity = new Vector3(moveVector.x, rb.velocity.y, moveVector.z);
+            transform.Rotate(new Vector3(0, movementInput.x * Time.fixedDeltaTime * rotationSpeed));
+            rb.velocity = transform.forward * movementInput.z * moveSpeed;
         }
     }
 }
