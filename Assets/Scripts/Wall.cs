@@ -2,8 +2,5 @@ using UnityEngine;
 
 namespace GGJ23
 {
-public class Wall : MonoBehaviour
-{
-    
-}
+    public class Wall : MonoBehaviour { }
 }

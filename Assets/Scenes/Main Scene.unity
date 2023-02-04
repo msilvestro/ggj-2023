@@ -808,6 +808,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5865338238463475979, guid: e1af106ff6eca3d4fa1955aaf3055f37,
         type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000,
+        type: 0}
+    - target: {fileID: 5865338238463475979, guid: e1af106ff6eca3d4fa1955aaf3055f37,
+        type: 3}
       propertyPath: m_Name
       value: Feature Creep
       objectReference: {fileID: 0}

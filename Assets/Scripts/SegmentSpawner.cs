@@ -23,10 +23,6 @@ namespace GGJ23
             segmentsContainer = new GameObject("Segments Container");
             despawningSegmentsContainer = new GameObject("Despawning Segments Container");
             rb = GetComponent<Rigidbody>();
-            foreach (Transform childTransform in transform)
-            {
-                childTransform.parent = segmentsContainer.transform;
-            }
             lastSpawnPosition = rb.position;
         }
 

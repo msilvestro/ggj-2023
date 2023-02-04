@@ -40,14 +40,7 @@ namespace GGJ23
 
         private void FixedUpdate()
         {
-            if (rb.velocity.magnitude > minimumVelocityToDisplayTrailRenderer)
-            {
-                trailRenderer.enabled = true;
-            }
-            else
-            {
-                trailRenderer.enabled = false;
-            }
+            trailRenderer.enabled = rb.velocity.magnitude > minimumVelocityToDisplayTrailRenderer;
         }
 
         public void Hit(out bool isFirstTime)
