@@ -242,6 +242,7 @@ GameObject:
   - component: {fileID: 2734548680979670840}
   - component: {fileID: 4533050904211085303}
   - component: {fileID: 252736968524019200}
+  - component: {fileID: 7307346180962982195}
   m_Layer: 5
   m_Name: You Delayed Text
   m_TagString: Untagged
@@ -308,7 +309,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0.7264151, g: 0.03769135, b: 0.03769135, a: 0.56078434}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -325,7 +326,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 200
+  m_fontSize: 160
   m_fontSizeBase: 200
   m_fontWeight: 400
   m_enableAutoSizing: 0
@@ -367,6 +368,26 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!95 &7307346180962982195
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3737538032727421479}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6276f4732f85f43dfbc5cc18002ef33c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &4071430388667230851
 GameObject:
   m_ObjectHideFlags: 0
