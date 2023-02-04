@@ -335,8 +335,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0.2547173, y: 0.016593626, z: -0.0043715406, w: 0.96686333}
-  m_LocalPosition: {x: -0.08, y: 1.32, z: 7.67}
+  m_LocalRotation: {x: 0.25471723, y: 0.016593624, z: -0.0043715397, w: 0.96686333}
+  m_LocalPosition: {x: -0.08, y: 1.02, z: 7.67}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -868,8 +868,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1039554521}
-  m_LocalRotation: {x: 0.2547173, y: 0.016593626, z: -0.0043715406, w: 0.96686333}
-  m_LocalPosition: {x: -0.08, y: 1.32, z: 7.67}
+  m_LocalRotation: {x: 0.25471723, y: 0.016593624, z: -0.0043715397, w: 0.96686333}
+  m_LocalPosition: {x: -0.08, y: 1.02, z: 7.67}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1258,11 +1258,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3984906075780606819, guid: e1af106ff6eca3d4fa1955aaf3055f37,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5865338238463475976, guid: e1af106ff6eca3d4fa1955aaf3055f37,
         type: 3}
       propertyPath: m_RootOrder
@@ -1276,7 +1271,7 @@ PrefabInstance:
     - target: {fileID: 5865338238463475976, guid: e1af106ff6eca3d4fa1955aaf3055f37,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.25
+      value: -0.05
       objectReference: {fileID: 0}
     - target: {fileID: 5865338238463475976, guid: e1af106ff6eca3d4fa1955aaf3055f37,
         type: 3}
@@ -1322,17 +1317,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Feature Creep
-      objectReference: {fileID: 0}
-    - target: {fileID: 5865338238463476023, guid: e1af106ff6eca3d4fa1955aaf3055f37,
-        type: 3}
-      propertyPath: segmentPrefab
-      value: 
-      objectReference: {fileID: 6418900166510269529, guid: 35c4fb56a5550604790f1b8fbcf8b24f,
-        type: 3}
-    - target: {fileID: 5865338238463476023, guid: e1af106ff6eca3d4fa1955aaf3055f37,
-        type: 3}
-      propertyPath: spawnDistance
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1af106ff6eca3d4fa1955aaf3055f37, type: 3}

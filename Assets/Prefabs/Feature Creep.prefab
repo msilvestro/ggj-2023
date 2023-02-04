@@ -80,7 +80,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   segmentPrefab: {fileID: 6418900166510269529, guid: 35c4fb56a5550604790f1b8fbcf8b24f,
     type: 3}
-  spawnDistance: 1
+  spawnDistance: 0.5
   maxNumberOfSegments: 10
 --- !u!135 &9142542441335397401
 SphereCollider:
@@ -162,7 +162,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3253520963347299191, guid: 35c4fb56a5550604790f1b8fbcf8b24f,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6882592419269172317, guid: 35c4fb56a5550604790f1b8fbcf8b24f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 35c4fb56a5550604790f1b8fbcf8b24f, type: 3}
 --- !u!4 &8150096460725147616 stripped
 Transform:

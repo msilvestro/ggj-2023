@@ -41,7 +41,7 @@ namespace GGJ23
             GameObject newSegment = GameObject.Instantiate(
                 segmentPrefab.gameObject,
                 rb.position,
-                Quaternion.identity
+                rb.rotation
             );
             newSegment.transform.parent = segmentContainer.transform;
             lastSpawnPosition = rb.position;
