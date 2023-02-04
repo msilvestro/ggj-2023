@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using GGJ23.Core;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -24,6 +25,9 @@ namespace GGJ23
 
         [SerializeField]
         private float minimumVelocityToDisplayTrailRenderer = 0.5f;
+
+        [SerializeField]
+        private PlaySoundEffects voiceSfx;
 
         private int timesHasBeenHit = 0;
         private Rigidbody rb;
@@ -54,6 +58,10 @@ namespace GGJ23
             if (isFirstTime && destroyAfterHit)
             {
                 StartCoroutine(DelayDespawn(destroyDelayInSeconds));
+            }
+            if (isFirstTime)
+            {
+                voiceSfx.Play();
             }
         }
 
