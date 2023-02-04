@@ -80,7 +80,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   segmentPrefab: {fileID: 6418900166510269529, guid: 35c4fb56a5550604790f1b8fbcf8b24f,
     type: 3}
-  spawnDistance: 0.8
+  spawnDistance: 0.7
   maxNumberOfSegments: 10
 --- !u!135 &9142542441335397401
 SphereCollider:

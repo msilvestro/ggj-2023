@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace GGJ23
 {
@@ -14,6 +16,8 @@ namespace GGJ23
         private Rigidbody rb;
         private Animator animator;
 
+        public event Action<int> OnHit;
+
         private void Awake()
         {
             rb = GetComponent<Rigidbody>();
@@ -26,6 +30,7 @@ namespace GGJ23
             isFirstTime = timesHasBeenHit == 1;
             animator.SetTrigger("hit");
             ThrowInTheAir();
+            OnHit.Invoke(timesHasBeenHit);
         }
 
         public int GetSegmentsToAddOnHit()
