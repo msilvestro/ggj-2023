@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5865338238463475977}
   - component: {fileID: 5865338238463475978}
   - component: {fileID: 5865338238463476023}
+  - component: {fileID: 9142542441335397401}
   m_Layer: 0
   m_Name: Feature Creep
   m_TagString: Untagged
@@ -57,13 +58,13 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5865338238463475979}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 100
   m_Drag: 0.5
-  m_AngularDrag: 0.05
+  m_AngularDrag: 1
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!114 &5865338238463476023
 MonoBehaviour:
@@ -81,6 +82,19 @@ MonoBehaviour:
     type: 3}
   spawnDistance: 0.1
   maxNumberOfSegments: 10
+--- !u!135 &9142542441335397401
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5865338238463475979}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.25
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &5865338238340307010
 PrefabInstance:
   m_ObjectHideFlags: 0
