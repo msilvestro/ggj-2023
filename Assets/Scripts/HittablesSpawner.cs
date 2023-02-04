@@ -40,7 +40,7 @@ namespace GGJ23
                     0,
                     (spawnArea.y / 2 - spawnAreaOffset.y) * Random.Range(-1f, 1f)
                 ),
-                Quaternion.identity
+                Quaternion.Euler(0, Random.Range(0, 360), 0)
             );
             newHittable.transform.parent = transform;
             newHittable.OnHit += SpawnAfterHit;
