@@ -6,7 +6,6 @@ namespace GGJ23.UI
 {
     public class DelayedByText : MonoBehaviour
     {
-        [SerializeField]
         private DelayScore delayScore;
 
         private TMP_Text textBox;
@@ -14,6 +13,7 @@ namespace GGJ23.UI
         private void Awake()
         {
             textBox = GetComponent<TMP_Text>();
+            delayScore = gameObject.GetGameController<DelayScore>();
         }
 
         private void OnEnable()

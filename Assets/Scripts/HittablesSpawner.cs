@@ -16,10 +16,9 @@ namespace GGJ23
         [SerializeField]
         private Vector2 spawnAreaOffset = new Vector2(0, 0);
 
-        [SerializeField]
-        private DelayScore delayScore;
-
         private Vector2 spawnArea;
+
+        private DelayScore delayScore;
 
         private void Awake()
         {
@@ -32,6 +31,7 @@ namespace GGJ23
             {
                 SpawnHittable();
             }
+            delayScore = gameObject.GetGameController<DelayScore>();
         }
 
         private void SpawnHittable()
