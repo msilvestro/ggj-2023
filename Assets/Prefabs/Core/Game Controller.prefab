@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4409504973525979406}
   m_Layer: 0
   m_Name: Game Controller
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,3 +45,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yearsOfDelay: 0
+  featureCreepCollection: {fileID: 11400000, guid: 97fc43a1bea3d544a830cf26de0e8ead,
+    type: 2}
