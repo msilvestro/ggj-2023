@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5405076644196950982}
   - component: {fileID: 1076248759585131547}
   - component: {fileID: 5024808091366976422}
+  - component: {fileID: 5262240343686719178}
   m_Layer: 5
   m_Name: Background Panel
   m_TagString: Untagged
@@ -93,6 +94,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Main Scene
+--- !u!114 &5262240343686719178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780813266650995816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e315451f4819643ae705ae54fd24d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayText: {fileID: 1443488076114817036}
+  reportText: {fileID: 8952235688233459747}
 --- !u!1 &3724647563310267330
 GameObject:
   m_ObjectHideFlags: 0

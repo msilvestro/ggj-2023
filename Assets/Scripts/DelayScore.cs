@@ -48,5 +48,20 @@ namespace GGJ23
             OnDelay.Invoke(title, description);
             featureCreepToYears[title] += yearsToAdd;
         }
+
+        public int GetYearsOfDelay()
+        {
+            return yearsOfDelay;
+        }
+
+        public string GetReport()
+        {
+            string report = "";
+            foreach (string title in featureCreepToYears.Keys)
+            {
+                report += $"{title}: {featureCreepToYears[title]} hours\n";
+            }
+            return report;
+        }
     }
 }
