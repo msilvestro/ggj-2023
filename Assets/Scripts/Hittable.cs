@@ -12,16 +12,19 @@ namespace GGJ23
 
         private int timesHasBeenHit = 0;
         private Rigidbody rb;
+        private Animator animator;
 
         private void Awake()
         {
             rb = GetComponent<Rigidbody>();
+            animator = GetComponentInChildren<Animator>();
         }
 
         public void Hit(out bool isFirstTime)
         {
             timesHasBeenHit += 1;
             isFirstTime = timesHasBeenHit == 1;
+            animator.SetTrigger("hit");
             ThrowInTheAir();
         }
 
