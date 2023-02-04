@@ -13,17 +13,19 @@ namespace GGJ23
         [SerializeField]
         private int maxNumberOfSegments = 10;
 
-        private GameObject segmentContainer;
+        private GameObject segmentsContainer;
+        private GameObject despawningSegmentsContainer;
         private Rigidbody rb;
         private Vector3 lastSpawnPosition;
 
         private void Awake()
         {
-            segmentContainer = new GameObject("Segment Container");
+            segmentsContainer = new GameObject("Segments Container");
+            despawningSegmentsContainer = new GameObject("Despawning Segments Container");
             rb = GetComponent<Rigidbody>();
             foreach (Transform childTransform in transform)
             {
-                childTransform.parent = segmentContainer.transform;
+                childTransform.parent = segmentsContainer.transform;
             }
             lastSpawnPosition = rb.position;
         }
@@ -43,18 +45,20 @@ namespace GGJ23
                 rb.position,
                 rb.rotation
             );
-            newSegment.transform.parent = segmentContainer.transform;
+            newSegment.transform.parent = segmentsContainer.transform;
             lastSpawnPosition = rb.position;
-            if (segmentContainer.transform.childCount > maxNumberOfSegments)
+            if (segmentsContainer.transform.childCount > maxNumberOfSegments)
             {
-                Destroy(segmentContainer.transform.GetChild(0).gameObject);
+                Transform segmentToDespawn = segmentsContainer.transform.GetChild(0);
+                segmentToDespawn.GetComponent<Segment>().Despawn();
+                segmentToDespawn.parent = despawningSegmentsContainer.transform;
             }
-            for (int i = 0; i < segmentContainer.transform.childCount; i++)
+            for (int i = 0; i < segmentsContainer.transform.childCount; i++)
             {
-                segmentContainer.transform
+                segmentsContainer.transform
                     .GetChild(i)
                     .GetComponent<Segment>()
-                    .SetSegmentNumber(segmentContainer.transform.childCount - i);
+                    .SetSegmentNumber(segmentsContainer.transform.childCount - i);
             }
         }
 
