@@ -17,6 +17,8 @@ namespace GGJ23
 
         private Vector2 inputDirection;
 
+        public event Action OnGameEnd;
+
         private void Awake()
         {
             rb = GetComponent<Rigidbody>();
@@ -63,10 +65,9 @@ namespace GGJ23
             }
         }
 
-        private static void EndGame()
+        private void EndGame()
         {
-            Debug.Log("YOU DIED");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            OnGameEnd.Invoke();
         }
 
         private void CheckHittables(Collider other)

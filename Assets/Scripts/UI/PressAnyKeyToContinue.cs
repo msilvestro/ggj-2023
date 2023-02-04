@@ -12,6 +12,7 @@ namespace GGJ23
         {
             if (Input.anyKeyDown)
             {
+                Time.timeScale = 1;
                 SceneManager.LoadScene(sceneName);
             }
         }
