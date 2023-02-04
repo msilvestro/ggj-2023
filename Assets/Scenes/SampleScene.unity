@@ -921,10 +921,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Feature Creep
       objectReference: {fileID: 0}
+    - target: {fileID: 6309699547484435777, guid: e1af106ff6eca3d4fa1955aaf3055f37,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8150096460725147616, guid: e1af106ff6eca3d4fa1955aaf3055f37,
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150096460725147616, guid: e1af106ff6eca3d4fa1955aaf3055f37,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1af106ff6eca3d4fa1955aaf3055f37, type: 3}
