@@ -26,19 +26,15 @@ namespace GGJ23
         private void Update()
         {
             float horizontalDelta = Input.GetAxis("Horizontal");
-            float verticalDelta = Input.GetAxis("Vertical");
-            inputDirection = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+            inputDirection = new Vector3(Input.GetAxis("Horizontal"), 0);
         }
 
         private void FixedUpdate()
         {
-            if (inputDirection.y > Mathf.Epsilon)
-            {
-                transform.Rotate(
-                    new Vector3(0, inputDirection.x * Time.fixedDeltaTime * rotationSpeed)
-                );
-            }
-            rb.velocity = transform.forward * inputDirection.y * moveSpeed;
+            transform.Rotate(
+                new Vector3(0, inputDirection.x * Time.fixedDeltaTime * rotationSpeed)
+            );
+            rb.velocity = transform.forward * moveSpeed;
         }
 
         private void OnTriggerEnter(Collider other)
