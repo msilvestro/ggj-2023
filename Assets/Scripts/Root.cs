@@ -45,6 +45,15 @@ namespace GGJ23
         {
             CheckHittables(other);
             CheckOtherSegments(other);
+            CheckWalls(other);
+        }
+
+        private void CheckWalls(Collider other)
+        {
+            Wall wall = other.GetComponent<Wall>();
+            if (wall == null)
+                return;
+            EndGame();
         }
 
         private void CheckOtherSegments(Collider other)
@@ -54,8 +63,14 @@ namespace GGJ23
                 return;
             if (segment.GetSegmentNumber() > 1)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                EndGame();
             }
+        }
+
+        private static void EndGame()
+        {
+            Debug.Log("YOU DIED");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
         private void CheckHittables(Collider other)

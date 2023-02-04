@@ -1091,6 +1091,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1879255718864330711, guid: ca944ea45c6d77544921cbb7c1ecd050,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1879255718953903372, guid: ca944ea45c6d77544921cbb7c1ecd050,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1879255719120810686, guid: ca944ea45c6d77544921cbb7c1ecd050,
         type: 3}
       propertyPath: m_RootOrder
@@ -1150,6 +1160,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arena
+      objectReference: {fileID: 0}
+    - target: {fileID: 1879255719761173634, guid: ca944ea45c6d77544921cbb7c1ecd050,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1879255720321509227, guid: ca944ea45c6d77544921cbb7c1ecd050,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca944ea45c6d77544921cbb7c1ecd050, type: 3}
@@ -1400,6 +1420,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Feature Creep
+      objectReference: {fileID: 0}
+    - target: {fileID: 8150096460725147616, guid: e1af106ff6eca3d4fa1955aaf3055f37,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1af106ff6eca3d4fa1955aaf3055f37, type: 3}
