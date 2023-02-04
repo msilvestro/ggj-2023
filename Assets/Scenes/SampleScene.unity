@@ -730,12 +730,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arena
       objectReference: {fileID: 0}
-    - target: {fileID: 1879255720257547417, guid: ca944ea45c6d77544921cbb7c1ecd050,
-        type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: 409cf81021fb3a04189b31f58d311d61,
-        type: 2}
     - target: {fileID: 1879255720257547418, guid: ca944ea45c6d77544921cbb7c1ecd050,
         type: 3}
       propertyPath: m_Layer
