@@ -12,7 +12,7 @@ namespace GGJ23
 
         private Rigidbody rb;
 
-        private Vector3 movementInput;
+        private Vector2 inputDirection;
 
         private void Awake()
         {
@@ -23,15 +23,18 @@ namespace GGJ23
         {
             float horizontalDelta = Input.GetAxis("Horizontal");
             float verticalDelta = Input.GetAxis("Vertical");
-            movementInput = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
+            inputDirection = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         }
 
         private void FixedUpdate()
         {
-            Vector3 moveVector = transform.TransformDirection(movementInput) * moveSpeed;
-            // rb.velocity = new Vector3(moveVector.x, rb.velocity.y, moveVector.z);
-            transform.Rotate(new Vector3(0, movementInput.x * Time.fixedDeltaTime * rotationSpeed));
-            rb.velocity = transform.forward * movementInput.z * moveSpeed;
+            if (inputDirection.y > Mathf.Epsilon)
+            {
+                transform.Rotate(
+                    new Vector3(0, inputDirection.x * Time.fixedDeltaTime * rotationSpeed)
+                );
+            }
+            rb.velocity = transform.forward * inputDirection.y * moveSpeed;
         }
     }
 }

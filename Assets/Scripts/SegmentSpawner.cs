@@ -9,10 +9,11 @@ namespace GGJ23
         private GameObject segmentPrefab;
 
         [SerializeField]
-        private float spawnFrequencyInSeconds = 1f;
+        private float spawnDistance = 1f;
 
         private GameObject segmentContainer;
         private Rigidbody rb;
+        private Vector3 lastSpawnPosition;
 
         private void Awake()
         {
@@ -22,32 +23,26 @@ namespace GGJ23
             {
                 childTransform.parent = segmentContainer.transform;
             }
+            lastSpawnPosition = rb.position;
         }
 
-        private void Start()
+        private void Update()
         {
-            StartCoroutine(SpawnSegment(spawnFrequencyInSeconds));
-        }
-
-        private IEnumerator SpawnSegment(float spawnFrequencyInSeconds)
-        {
-            while (true)
+            if (Vector3.Distance(lastSpawnPosition, rb.position) >= spawnDistance)
             {
-                if (rb.velocity.magnitude > Mathf.Epsilon)
-                {
-                    GameObject newSegment = GameObject.Instantiate(
-                        segmentPrefab,
-                        transform.position,
-                        Quaternion.identity
-                    );
-                    newSegment.transform.parent = segmentContainer.transform;
-                }
-                else
-                {
-                    Debug.Log("Not spawned because velocity too low.");
-                }
-                yield return new WaitForSeconds(spawnFrequencyInSeconds);
+                SpawnSegment();
             }
+        }
+
+        private void SpawnSegment()
+        {
+            GameObject newSegment = GameObject.Instantiate(
+                segmentPrefab,
+                rb.position,
+                Quaternion.identity
+            );
+            newSegment.transform.parent = segmentContainer.transform;
+            lastSpawnPosition = rb.position;
         }
     }
 }
