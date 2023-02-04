@@ -47,3 +47,4 @@ MonoBehaviour:
   yearsOfDelay: 0
   featureCreepCollection: {fileID: 11400000, guid: 97fc43a1bea3d544a830cf26de0e8ead,
     type: 2}
+  yearsToAdd: 100
