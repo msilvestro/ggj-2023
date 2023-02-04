@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace GGJ23
 {
@@ -51,7 +52,10 @@ namespace GGJ23
             Segment segment = other.GetComponent<Segment>();
             if (segment == null)
                 return;
-            Debug.Log(segment.GetSegmentNumber());
+            if (segment.GetSegmentNumber() > 1)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
         }
 
         private void CheckHittables(Collider other)

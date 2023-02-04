@@ -49,9 +49,12 @@ namespace GGJ23
             {
                 Destroy(segmentContainer.transform.GetChild(0).gameObject);
             }
-            for (int i = 0; i < transform.childCount; i++)
+            for (int i = 0; i < segmentContainer.transform.childCount; i++)
             {
-                transform.GetChild(i).GetComponent<Segment>().SetSegmentNumber(i);
+                segmentContainer.transform
+                    .GetChild(i)
+                    .GetComponent<Segment>()
+                    .SetSegmentNumber(segmentContainer.transform.childCount - i);
             }
         }
 

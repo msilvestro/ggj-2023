@@ -4,6 +4,7 @@ namespace GGJ23
 {
     public class Segment : MonoBehaviour
     {
+        [SerializeField]
         private int segmentNumber = 0;
 
         public void SetSegmentNumber(int segmentNumber)
