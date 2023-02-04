@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -59,7 +60,7 @@ namespace GGJ23
             OnHit.Invoke(timesHasBeenHit);
             if (isFirstTime && destroyAfterHit)
             {
-                Destroy(gameObject, destroyDelayInSeconds);
+                StartCoroutine(DelayDespawn(destroyDelayInSeconds));
             }
         }
 
@@ -76,6 +77,17 @@ namespace GGJ23
                     * hitForceMagnitude,
                 ForceMode.Impulse
             );
+        }
+
+        private IEnumerator DelayDespawn(float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            animator.SetTrigger("destroy");
+        }
+
+        public void Destroy()
+        {
+            Destroy(gameObject);
         }
     }
 }
