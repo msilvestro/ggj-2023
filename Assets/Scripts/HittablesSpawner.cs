@@ -16,6 +16,9 @@ namespace GGJ23
         [SerializeField]
         private Vector2 spawnAreaOffset = new Vector2(0, 0);
 
+        [SerializeField]
+        private DelayScore delayScore;
+
         private Vector2 spawnArea;
 
         private void Awake()
@@ -43,17 +46,17 @@ namespace GGJ23
                 Quaternion.Euler(0, Random.Range(0, 360), 0)
             );
             newHittable.transform.parent = transform;
-            newHittable.OnHit += SpawnAfterHit;
-            Debug.Log("spawn!");
+            newHittable.OnHit += HitSpawnedHittable;
         }
 
-        private void SpawnAfterHit(int numberOfHits)
+        private void HitSpawnedHittable(int numberOfHits)
         {
             if (numberOfHits > 1)
             {
                 return;
             }
             SpawnHittable();
+            delayScore.Delay();
         }
     }
 }
