@@ -18,6 +18,8 @@ namespace GGJ23
 
         private Vector2 spawnArea;
 
+        private DelayScore delayScore;
+
         private void Awake()
         {
             spawnArea = new Vector2(terrainPlane.localScale.x * 10, terrainPlane.localScale.z * 10);
@@ -29,6 +31,7 @@ namespace GGJ23
             {
                 SpawnHittable();
             }
+            delayScore = gameObject.GetGameController<DelayScore>();
         }
 
         private void SpawnHittable()
@@ -43,17 +46,17 @@ namespace GGJ23
                 Quaternion.Euler(0, Random.Range(0, 360), 0)
             );
             newHittable.transform.parent = transform;
-            newHittable.OnHit += SpawnAfterHit;
-            Debug.Log("spawn!");
+            newHittable.OnHit += HitSpawnedHittable;
         }
 
-        private void SpawnAfterHit(int numberOfHits)
+        private void HitSpawnedHittable(int numberOfHits)
         {
             if (numberOfHits > 1)
             {
                 return;
             }
             SpawnHittable();
+            delayScore.Delay();
         }
     }
 }
