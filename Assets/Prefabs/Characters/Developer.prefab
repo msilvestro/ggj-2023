@@ -81,6 +81,8 @@ MonoBehaviour:
   hitForceMagnitude: 5
   destroyAfterHit: 1
   destroyDelayInSeconds: 8
+  trailRenderer: {fileID: 256313829014603652}
+  minimumVelocityToDisplayTrailRenderer: 0.4
 --- !u!136 &4939723279053394911
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -208,7 +210,7 @@ TrailRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5000061557238318946}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

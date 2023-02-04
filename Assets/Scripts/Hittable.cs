@@ -18,6 +18,12 @@ namespace GGJ23
         [SerializeField]
         private float destroyDelayInSeconds = 10f;
 
+        [SerializeField]
+        private TrailRenderer trailRenderer;
+
+        [SerializeField]
+        private float minimumVelocityToDisplayTrailRenderer = 0.5f;
+
         private int timesHasBeenHit = 0;
         private Rigidbody rb;
         private Animator animator;
@@ -28,6 +34,19 @@ namespace GGJ23
         {
             rb = GetComponent<Rigidbody>();
             animator = GetComponentInChildren<Animator>();
+            trailRenderer.enabled = false;
+        }
+
+        private void FixedUpdate()
+        {
+            if (rb.velocity.magnitude > minimumVelocityToDisplayTrailRenderer)
+            {
+                trailRenderer.enabled = true;
+            }
+            else
+            {
+                trailRenderer.enabled = false;
+            }
         }
 
         public void Hit(out bool isFirstTime)
@@ -35,6 +54,7 @@ namespace GGJ23
             timesHasBeenHit += 1;
             isFirstTime = timesHasBeenHit == 1;
             animator.SetTrigger("hit");
+            trailRenderer.enabled = true;
             ThrowInTheAir();
             OnHit.Invoke(timesHasBeenHit);
             if (isFirstTime && destroyAfterHit)
