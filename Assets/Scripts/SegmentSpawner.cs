@@ -50,5 +50,10 @@ namespace GGJ23
                 Destroy(segmentContainer.transform.GetChild(0).gameObject);
             }
         }
+
+        public void AddSegments(int newSegments)
+        {
+            maxNumberOfSegments += newSegments;
+        }
     }
 }

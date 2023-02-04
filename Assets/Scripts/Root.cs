@@ -11,12 +11,14 @@ namespace GGJ23
         private float rotationSpeed = 1f;
 
         private Rigidbody rb;
+        private SegmentSpawner segmentSpawner;
 
         private Vector2 inputDirection;
 
         private void Awake()
         {
             rb = GetComponent<Rigidbody>();
+            segmentSpawner = GetComponent<SegmentSpawner>();
         }
 
         private void Update()
@@ -35,6 +37,18 @@ namespace GGJ23
                 );
             }
             rb.velocity = transform.forward * inputDirection.y * moveSpeed;
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            Hittable hittable = other.gameObject.GetComponent<Hittable>();
+            if (hittable == null)
+                return;
+            hittable.Hit(out bool isFirstTime);
+            if (isFirstTime)
+            {
+                segmentSpawner.AddSegments(hittable.GetSegmentsToAddOnHit());
+            }
         }
     }
 }
