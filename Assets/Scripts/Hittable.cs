@@ -12,6 +12,12 @@ namespace GGJ23
         [SerializeField]
         private float hitForceMagnitude = 10f;
 
+        [SerializeField]
+        private bool destroyAfterHit = false;
+
+        [SerializeField]
+        private float destroyDelayInSeconds = 10f;
+
         private int timesHasBeenHit = 0;
         private Rigidbody rb;
         private Animator animator;
@@ -31,6 +37,10 @@ namespace GGJ23
             animator.SetTrigger("hit");
             ThrowInTheAir();
             OnHit.Invoke(timesHasBeenHit);
+            if (isFirstTime && destroyAfterHit)
+            {
+                Destroy(gameObject, destroyDelayInSeconds);
+            }
         }
 
         public int GetSegmentsToAddOnHit()

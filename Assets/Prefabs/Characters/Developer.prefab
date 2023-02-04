@@ -79,6 +79,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   segmentsToAddOnHit: 5
   hitForceMagnitude: 5
+  destroyAfterHit: 1
+  destroyDelayInSeconds: 8
 --- !u!136 &4939723279053394911
 CapsuleCollider:
   m_ObjectHideFlags: 0
