@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5865338238463475978}
   - component: {fileID: 5865338238463476023}
   m_Layer: 0
-  m_Name: Root
+  m_Name: Feature Creep
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
