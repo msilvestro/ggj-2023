@@ -36,7 +36,8 @@ namespace GGJ23
         private void ThrowInTheAir()
         {
             rb.AddForce(
-                new Vector3(Random.Range(-1f, 1f), 1, Random.Range(-1f, 1f)) * hitForceMagnitude,
+                new Vector3(Random.Range(-1f, 1f), 1, Random.Range(-1f, 1f)).normalized
+                    * hitForceMagnitude,
                 ForceMode.Impulse
             );
         }
