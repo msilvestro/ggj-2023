@@ -28,7 +28,7 @@ namespace GGJ23
             lastSpawnPosition = rb.position;
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
             if (Vector3.Distance(lastSpawnPosition, rb.position) >= spawnDistance)
             {
