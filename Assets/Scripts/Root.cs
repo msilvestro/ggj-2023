@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace GGJ23
@@ -40,6 +41,20 @@ namespace GGJ23
         }
 
         private void OnTriggerEnter(Collider other)
+        {
+            CheckHittables(other);
+            CheckOtherSegments(other);
+        }
+
+        private void CheckOtherSegments(Collider other)
+        {
+            Segment segment = other.GetComponent<Segment>();
+            if (segment == null)
+                return;
+            Debug.Log(segment.GetSegmentNumber());
+        }
+
+        private void CheckHittables(Collider other)
         {
             Hittable hittable = other.gameObject.GetComponent<Hittable>();
             if (hittable == null)

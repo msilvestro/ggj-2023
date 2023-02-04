@@ -5,7 +5,7 @@ namespace GGJ23
     public class SegmentSpawner : MonoBehaviour
     {
         [SerializeField]
-        private GameObject segmentPrefab;
+        private Segment segmentPrefab;
 
         [SerializeField]
         private float spawnDistance = 1f;
@@ -39,7 +39,7 @@ namespace GGJ23
         private void SpawnSegment()
         {
             GameObject newSegment = GameObject.Instantiate(
-                segmentPrefab,
+                segmentPrefab.gameObject,
                 rb.position,
                 Quaternion.identity
             );
@@ -48,6 +48,10 @@ namespace GGJ23
             if (segmentContainer.transform.childCount > maxNumberOfSegments)
             {
                 Destroy(segmentContainer.transform.GetChild(0).gameObject);
+            }
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                transform.GetChild(i).GetComponent<Segment>().SetSegmentNumber(i);
             }
         }
 
