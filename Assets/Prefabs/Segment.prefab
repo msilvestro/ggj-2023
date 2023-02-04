@@ -50,7 +50,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!95 &7361385360879317793
 Animator:
@@ -84,6 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4a6907efcf7cd44a1ae4d20ed990ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  segmentNumber: 0
 --- !u!65 &1595876911476942999
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -91,7 +92,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2341638166680358817}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 409cf81021fb3a04189b31f58d311d61, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
