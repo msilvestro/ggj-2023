@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4939723279053394911}
   - component: {fileID: 6231403049870746148}
   m_Layer: 9
-  m_Name: Developer
+  m_Name: Developer Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86,8 +86,7 @@ MonoBehaviour:
   trailRenderer: {fileID: 256313829014603652}
   minimumVelocityToDisplayTrailRenderer: 0.4
   voiceSfx: {fileID: 8533858568522704847}
-  titlesToShow:
-  - Multiplayer
+  titlesToShow: []
 --- !u!136 &4939723279053394911
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -588,7 +587,7 @@ PrefabInstance:
     - target: {fileID: 4133021684171924739, guid: b773d37518a188b41b71cd7208d875f5,
         type: 3}
       propertyPath: clip.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4133021684171924739, guid: b773d37518a188b41b71cd7208d875f5,
         type: 3}
