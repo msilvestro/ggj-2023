@@ -19,6 +19,8 @@ namespace GGJ23
 
         public event Action OnGameEnd;
 
+        private bool isStopped = false;
+
         private void Awake()
         {
             rb = GetComponent<Rigidbody>();
@@ -27,12 +29,20 @@ namespace GGJ23
 
         private void Update()
         {
+            if (isStopped)
+            {
+                return;
+            }
             float horizontalDelta = Input.GetAxis("Horizontal");
             inputDirection = new Vector3(Input.GetAxis("Horizontal"), 0);
         }
 
         private void FixedUpdate()
         {
+            if (isStopped)
+            {
+                return;
+            }
             transform.Rotate(
                 new Vector3(0, inputDirection.x * Time.fixedDeltaTime * rotationSpeed)
             );
@@ -67,7 +77,8 @@ namespace GGJ23
 
         private void EndGame()
         {
-            moveSpeed = 0;
+            isStopped = true;
+            rb.velocity = Vector3.zero;
             foreach (Transform child in transform)
             {
                 child.gameObject.SetActive(false);
