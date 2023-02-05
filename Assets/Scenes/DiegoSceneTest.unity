@@ -5014,7 +5014,32 @@ PrefabInstance:
     - target: {fileID: 343591717372652501, guid: 5ef1ae828b0cfac4e85ab81275270d7e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4500122
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 343591717372652501, guid: 5ef1ae828b0cfac4e85ab81275270d7e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 343591717372652501, guid: 5ef1ae828b0cfac4e85ab81275270d7e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9892682
+      objectReference: {fileID: 0}
+    - target: {fileID: 343591717372652501, guid: 5ef1ae828b0cfac4e85ab81275270d7e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.14611149
+      objectReference: {fileID: 0}
+    - target: {fileID: 343591717372652501, guid: 5ef1ae828b0cfac4e85ab81275270d7e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.000000017021724
+      objectReference: {fileID: 0}
+    - target: {fileID: 343591717372652501, guid: 5ef1ae828b0cfac4e85ab81275270d7e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0000000025140499
       objectReference: {fileID: 0}
     - target: {fileID: 1159827561393084624, guid: 5ef1ae828b0cfac4e85ab81275270d7e,
         type: 3}
@@ -5743,6 +5768,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Feature Creep
       objectReference: {fileID: 0}
+    - target: {fileID: 5865338238463476023, guid: e1af106ff6eca3d4fa1955aaf3055f37,
+        type: 3}
+      propertyPath: segmentsPrefab.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5865338238463476023, guid: e1af106ff6eca3d4fa1955aaf3055f37,
+        type: 3}
+      propertyPath: segmentsPrefab.Array.data[2]
+      value: 
+      objectReference: {fileID: 1008746049876952778, guid: 4a79f97b2631ff647b12ade98ec611e4,
+        type: 3}
     - target: {fileID: 6309699547484435777, guid: e1af106ff6eca3d4fa1955aaf3055f37,
         type: 3}
       propertyPath: m_LocalPosition.y
