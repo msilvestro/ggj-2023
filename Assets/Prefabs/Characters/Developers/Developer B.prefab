@@ -89,12 +89,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8533858568522704847, guid: 0081144a54603844893494dc67cbcc34,
         type: 3}
+      propertyPath: clips.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8533858568522704847, guid: 0081144a54603844893494dc67cbcc34,
+        type: 3}
       propertyPath: clip.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: 74a2e5787e2edab47a973e7c9ad50acd, type: 3}
     - target: {fileID: 8533858568522704847, guid: 0081144a54603844893494dc67cbcc34,
         type: 3}
       propertyPath: clip.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2c732d42a8df9ac4881c5c9e5fa8aa55, type: 3}
+    - target: {fileID: 8533858568522704847, guid: 0081144a54603844893494dc67cbcc34,
+        type: 3}
+      propertyPath: clips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 74a2e5787e2edab47a973e7c9ad50acd, type: 3}
+    - target: {fileID: 8533858568522704847, guid: 0081144a54603844893494dc67cbcc34,
+        type: 3}
+      propertyPath: clips.Array.data[1]
       value: 
       objectReference: {fileID: 8300000, guid: 2c732d42a8df9ac4881c5c9e5fa8aa55, type: 3}
     m_RemovedComponents: []
