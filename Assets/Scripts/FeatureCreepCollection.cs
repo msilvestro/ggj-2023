@@ -27,5 +27,17 @@ namespace GGJ23
         {
             return featureCreepData[Random.Range(0, featureCreepData.Length - 1)];
         }
+
+        public FeatureCreepData GetFromTitle(string title)
+        {
+            foreach (FeatureCreepData featureCreepDatum in featureCreepData)
+            {
+                if (featureCreepDatum.title == title)
+                {
+                    return featureCreepDatum;
+                }
+            }
+            return null;
+        }
     }
 }

@@ -1,14 +1,11 @@
 using UnityEngine;
 
-namespace GGJ23
+namespace GGJ23.Audio
 {
     public class PlaySoundEffects : MonoBehaviour
     {
         [SerializeField]
         private AudioClip[] clip;
-
-        [SerializeField]
-        private int volume = 1;
 
         private AudioSource audioSource;
 
