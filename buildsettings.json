@@ -1,0 +1,7 @@
+{
+  "buildPath": "Builds/WebGL",
+  "itchUser": "msilvestro",
+  "itchGame": "the-creeping-feature",
+  "parallel": true,
+  "publishToItch": true
+}
