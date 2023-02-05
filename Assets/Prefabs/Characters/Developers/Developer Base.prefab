@@ -326,6 +326,7 @@ GameObject:
   - component: {fileID: 4012751985896281155}
   - component: {fileID: 1238664573313485889}
   - component: {fileID: 6230050158391420509}
+  - component: {fileID: 5327661124488027097}
   m_Layer: 9
   m_Name: Head
   m_TagString: Untagged
@@ -411,6 +412,24 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.49999994
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5327661124488027097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7182436308921966919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27cd007dbc88fac48b911082839b07df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faces:
+  - {fileID: 2100000, guid: efae1ff8f99114040b6c4a2e8a440aaf, type: 2}
+  - {fileID: 2100000, guid: 3cf3ae50a23a6204c8fa44e3e233cbf8, type: 2}
+  - {fileID: 2100000, guid: 084d235dfd1eb1f47bacaccc1e0736cf, type: 2}
+  - {fileID: 2100000, guid: d4391ef55a3dd6c4996a4b508d7a571c, type: 2}
+  - {fileID: 2100000, guid: 14a62805616b6b744ab9faa418db463d, type: 2}
 --- !u!1 &7369467180306110077
 GameObject:
   m_ObjectHideFlags: 0
