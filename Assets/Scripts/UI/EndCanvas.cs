@@ -6,7 +6,10 @@ namespace GGJ23
     public class EndCanvas : MonoBehaviour
     {
         [SerializeField]
-        private RectTransform canvasBackground;
+        private RectTransform youDelayedPanel;
+
+        [SerializeField]
+        private RectTransform reportPanel;
 
         [SerializeField]
         private Canvas mainCanvas;
@@ -16,6 +19,8 @@ namespace GGJ23
         private void Awake()
         {
             playerRoot = gameObject.GetPlayer<Root>();
+            youDelayedPanel.gameObject.SetActive(false);
+            reportPanel.gameObject.SetActive(false);
         }
 
         private void OnEnable()
@@ -31,7 +36,7 @@ namespace GGJ23
         private void ShowEndCanvas()
         {
             mainCanvas.gameObject.SetActive(false);
-            canvasBackground.gameObject.SetActive(true);
+            youDelayedPanel.gameObject.SetActive(true);
             Time.timeScale = 0;
         }
     }

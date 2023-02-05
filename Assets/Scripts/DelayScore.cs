@@ -66,7 +66,7 @@ namespace GGJ23
             return yearsOfDelay;
         }
 
-        public string GetReport()
+        public string GetFullReport()
         {
             string report = "";
             foreach (string title in featureCreepToYears.Keys)
@@ -74,6 +74,26 @@ namespace GGJ23
                 report += $"{title}: {featureCreepToYears[title]} hours\n";
             }
             return report;
+        }
+
+        public string GetReportTitles()
+        {
+            string reportTitles = "";
+            foreach (string title in featureCreepToYears.Keys)
+            {
+                reportTitles += $"{title}:\n";
+            }
+            return reportTitles;
+        }
+
+        public string GetReportYears()
+        {
+            string reportYears = "";
+            foreach (string title in featureCreepToYears.Keys)
+            {
+                reportYears += $"{featureCreepToYears[title]} hours\n";
+            }
+            return reportYears;
         }
     }
 }
