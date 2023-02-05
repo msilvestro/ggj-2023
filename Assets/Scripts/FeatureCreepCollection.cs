@@ -10,7 +10,7 @@ namespace GGJ23
 
         public string GetRandomDescription()
         {
-            return descriptions[Random.Range(0, descriptions.Length - 1)];
+            return descriptions[Random.Range(0, descriptions.Length)];
         }
     }
 
@@ -25,7 +25,7 @@ namespace GGJ23
 
         public FeatureCreepData GetRandomFeatureCreepData()
         {
-            return featureCreepData[Random.Range(0, featureCreepData.Length - 1)];
+            return featureCreepData[Random.Range(0, featureCreepData.Length)];
         }
 
         public FeatureCreepData GetFromTitle(string title)

@@ -5,7 +5,7 @@ namespace GGJ23
     public class HittablesSpawner : MonoBehaviour
     {
         [SerializeField]
-        private Hittable hittablePrefab;
+        private Hittable[] hittablePrefabs;
 
         [SerializeField]
         private int numberToSpawnAtStart = 1;
@@ -33,6 +33,7 @@ namespace GGJ23
 
         private void SpawnHittable()
         {
+            Hittable hittablePrefab = hittablePrefabs[Random.Range(0, hittablePrefabs.Length)];
             Hittable newHittable = GameObject.Instantiate(
                 hittablePrefab,
                 new Vector3(
