@@ -271,6 +271,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1791295302812980459, guid: 26189c7ec1975d942a563f347bee2472,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3527243955594668112, guid: 26189c7ec1975d942a563f347bee2472,
         type: 3}
       propertyPath: m_Name
@@ -1118,7 +1123,7 @@ PrefabInstance:
     - target: {fileID: 6671643158895133529, guid: 52dc133c0d434d34293740184f2157d0,
         type: 3}
       propertyPath: hittablePrefabs.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6671643158895133529, guid: 52dc133c0d434d34293740184f2157d0,
         type: 3}
@@ -1137,6 +1142,18 @@ PrefabInstance:
       propertyPath: hittablePrefabs.Array.data[2]
       value: 
       objectReference: {fileID: 8486048300828482805, guid: 0eff6a81ff51a034cbe95c20bdb7611a,
+        type: 3}
+    - target: {fileID: 6671643158895133529, guid: 52dc133c0d434d34293740184f2157d0,
+        type: 3}
+      propertyPath: hittablePrefabs.Array.data[3]
+      value: 
+      objectReference: {fileID: 8719723522268078196, guid: 2c8bda1415a75de4bb4a8d6c44d5b507,
+        type: 3}
+    - target: {fileID: 6671643158895133529, guid: 52dc133c0d434d34293740184f2157d0,
+        type: 3}
+      propertyPath: hittablePrefabs.Array.data[4]
+      value: 
+      objectReference: {fileID: 2167164507931934845, guid: 99dbf50b9eacfd042bf3ab6e9e4c1cc7,
         type: 3}
     - target: {fileID: 6671643158895133530, guid: 52dc133c0d434d34293740184f2157d0,
         type: 3}
