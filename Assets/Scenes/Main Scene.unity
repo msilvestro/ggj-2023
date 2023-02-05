@@ -908,7 +908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee85ce8638920f74c915a91f38943939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startOnAwake: 1
+  startOnAwake: 0
   useCustomAmplitudeGainCurve: 0
   amplitudeGainCurve:
     serializedVersion: 2
@@ -999,6 +999,24 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.24763028
+      value: 2.5355446
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.3779312
+      value: 4.809414
       inSlope: 0
       outSlope: 0
       tangentMode: 136
