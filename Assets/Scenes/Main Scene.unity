@@ -1418,6 +1418,11 @@ PrefabInstance:
       propertyPath: mainCanvas
       value: 
       objectReference: {fileID: 728540217}
+    - target: {fileID: 9198180814511347730, guid: 0a89015c946743e40a1118bb0434e796,
+        type: 3}
+      propertyPath: m_Name
+      value: End Sfx
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a89015c946743e40a1118bb0434e796, type: 3}
 --- !u!1001 &5865338239045265303
