@@ -356,6 +356,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pause Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2383585616668693720, guid: ad381c8a0244bf2419a0878654cef720,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 132504115}
+    - target: {fileID: 2383585616668693720, guid: ad381c8a0244bf2419a0878654cef720,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad381c8a0244bf2419a0878654cef720, type: 3}
 --- !u!1001 &653500466
