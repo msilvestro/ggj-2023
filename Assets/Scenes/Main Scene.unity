@@ -896,17 +896,84 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4797789240199176680}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1104198534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104198528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee85ce8638920f74c915a91f38943939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startOnAwake: 1
+  useCustomAmplitudeGainCurve: 0
+  amplitudeGainCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1217151156 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5865338238463475979, guid: e1af106ff6eca3d4fa1955aaf3055f37,
     type: 3}
   m_PrefabInstance: {fileID: 5865338239045265303}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1419862033 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 343591716745066850, guid: 5ef1ae828b0cfac4e85ab81275270d7e,
+    type: 3}
+  m_PrefabInstance: {fileID: 343591717116001823}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1419862038
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419862033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+  m_PivotOffset: {x: 0, y: 0, z: 0}
+  m_AmplitudeGain: 1
+  m_FrequencyGain: 1
+  mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &1467751917 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6671643158895133530, guid: 52dc133c0d434d34293740184f2157d0,
     type: 3}
   m_PrefabInstance: {fileID: 6671643157945880663}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1478149468 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 343591716932118982, guid: 5ef1ae828b0cfac4e85ab81275270d7e,
+    type: 3}
+  m_PrefabInstance: {fileID: 343591717116001823}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1478149471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478149468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75c9af8a4576e594ab8bea7814b058da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1838604238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 343591717372652504, guid: 5ef1ae828b0cfac4e85ab81275270d7e,
+    type: 3}
+  m_PrefabInstance: {fileID: 343591717116001823}
   m_PrefabAsset: {fileID: 0}
 --- !u!20 &1838604243 stripped
 Camera:
@@ -914,6 +981,57 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 343591717116001823}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1838604244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838604238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a77f7faf4639cb64b8699c3d508973d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultAmplitudeGainCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.5
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  frequencyGainCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 136
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &1847052443 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2690931416431060827, guid: 7e4e17a1b6fe93b49a75b0514e6c0969,

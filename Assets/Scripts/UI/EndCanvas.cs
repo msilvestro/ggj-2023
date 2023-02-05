@@ -1,5 +1,6 @@
 using System;
 using GGJ23.Audio;
+using GGJ23.Utils;
 using UnityEngine;
 
 namespace GGJ23
@@ -42,6 +43,7 @@ namespace GGJ23
             mainCanvas.gameObject.SetActive(false);
             youDelayedPanel.gameObject.SetActive(true);
             endSfx.Play();
+            GetComponent<ScreenshakeController>().StartScreenshake();
         }
     }
 }
