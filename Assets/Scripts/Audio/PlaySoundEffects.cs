@@ -5,7 +5,7 @@ namespace GGJ23.Audio
     public class PlaySoundEffects : MonoBehaviour
     {
         [SerializeField]
-        private AudioClip[] clip;
+        private AudioClip[] clips;
 
         private AudioSource audioSource;
 
@@ -17,7 +17,7 @@ namespace GGJ23.Audio
 
         public void Play()
         {
-            audioSource.clip = clip[Random.Range(0, clip.Length - 1)];
+            audioSource.clip = clips[Random.Range(0, clips.Length)];
             audioSource.Play();
         }
     }

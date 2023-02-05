@@ -19,6 +19,7 @@ MonoBehaviour:
     - "\u201CPicture that: ALL GENERATIONS PLAYING TOGETHER IN THEIR LIVING ROOM!\u201D"
     - "\u201CThey should all HATE EACH OTHER OVER OUR GAME\u201D"
     - '"Cross-play?! Just buy my game twice, you bum!"'
+    - '"Then they ALL have to buy our game!"'
   - title: Shop
     descriptions:
     - "\u201CI would like more money on my money, please!\u201D"
@@ -31,9 +32,17 @@ MonoBehaviour:
     descriptions:
     - '"Players will enjoy seeing each pixel big as their head"'
     - '"I spent 30 hours on those UV: THEY WILL SEE THEM IN FRONT OF THEIR NOSE"'
+    - '"I have to implement VR, can you lend me your potato PC?"'
+    - '"The motion sickness is a feature to convey the life of a little seed"'
+    - '"This will be realer than life itself!"'
   - title: Porting
     descriptions:
     - "\u201CThey should be able to run our game on their dishwasher!\u201D"
+    - '"What if PS Vita will come back?"'
+    - '"My game will rock on PS Plus!"'
+    - '"What do you mean you can''t a toothbrush as controller"'
   - title: Boss Fight
     descriptions:
     - '"Asylum Demon my ass!"'
+    - '"Fighting this huge potato is very important to the plot"'
+    - '"But without the fog the player won''t understand this is the boss fight!"'

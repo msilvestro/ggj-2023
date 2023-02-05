@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &4887053722009043409
+--- !u!1001 &7270056467205731372
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -15,13 +15,13 @@ PrefabInstance:
     - target: {fileID: 1234006232409598169, guid: 0081144a54603844893494dc67cbcc34,
         type: 3}
       propertyPath: titlesToShow.Array.data[0]
-      value: Shop
+      value: VR
       objectReference: {fileID: 0}
     - target: {fileID: 1390108714872771732, guid: 0081144a54603844893494dc67cbcc34,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: fca08099bc1b52a42b46485c9a9b48c0, type: 2}
+      objectReference: {fileID: 2100000, guid: 1a6deca8258c6da45a7bc0acb031387f, type: 2}
     - target: {fileID: 2294623623558934789, guid: 0081144a54603844893494dc67cbcc34,
         type: 3}
       propertyPath: m_RootOrder
@@ -80,22 +80,22 @@ PrefabInstance:
     - target: {fileID: 2294623623558934794, guid: 0081144a54603844893494dc67cbcc34,
         type: 3}
       propertyPath: m_Name
-      value: Developer B
+      value: Developer VR
       objectReference: {fileID: 0}
     - target: {fileID: 8533858568522704847, guid: 0081144a54603844893494dc67cbcc34,
         type: 3}
-      propertyPath: clip.Array.size
+      propertyPath: clips.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8533858568522704847, guid: 0081144a54603844893494dc67cbcc34,
         type: 3}
-      propertyPath: clip.Array.data[0]
+      propertyPath: clips.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 74a2e5787e2edab47a973e7c9ad50acd, type: 3}
+      objectReference: {fileID: 8300000, guid: c18c706fed4440545bbe60c2b87cf3a5, type: 3}
     - target: {fileID: 8533858568522704847, guid: 0081144a54603844893494dc67cbcc34,
         type: 3}
-      propertyPath: clip.Array.data[1]
+      propertyPath: clips.Array.data[1]
       value: 
-      objectReference: {fileID: 8300000, guid: 2c732d42a8df9ac4881c5c9e5fa8aa55, type: 3}
+      objectReference: {fileID: 8300000, guid: 06763a5ab5c9afe45b5bbe2b1b60d986, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0081144a54603844893494dc67cbcc34, type: 3}
