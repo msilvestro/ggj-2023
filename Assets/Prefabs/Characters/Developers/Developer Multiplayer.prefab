@@ -21,7 +21,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d4391ef55a3dd6c4996a4b508d7a571c, type: 2}
+      objectReference: {fileID: 2100000, guid: 70b23821c309d184793b4daf5282e752, type: 2}
     - target: {fileID: 1390108714872771732, guid: 0081144a54603844893494dc67cbcc34,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -85,7 +85,7 @@ PrefabInstance:
     - target: {fileID: 2294623623558934794, guid: 0081144a54603844893494dc67cbcc34,
         type: 3}
       propertyPath: m_Name
-      value: Developer A
+      value: Developer Multiplayer
       objectReference: {fileID: 0}
     - target: {fileID: 8533858568522704847, guid: 0081144a54603844893494dc67cbcc34,
         type: 3}
