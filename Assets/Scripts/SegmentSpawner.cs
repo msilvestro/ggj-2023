@@ -5,7 +5,7 @@ namespace GGJ23
     public class SegmentSpawner : MonoBehaviour
     {
         [SerializeField]
-        private Segment segmentPrefab;
+        private Segment[] segmentsPrefab;
 
         [SerializeField]
         private float spawnDistance = 1f;
@@ -17,6 +17,8 @@ namespace GGJ23
         private GameObject despawningSegmentsContainer;
         private Rigidbody rb;
         private Vector3 lastSpawnPosition;
+
+        private int lastSegmentIndex = -1;
 
         private void Awake()
         {
@@ -34,10 +36,16 @@ namespace GGJ23
             }
         }
 
+        private Segment GetNextSegment()
+        {
+            lastSegmentIndex = (lastSegmentIndex + 1) % segmentsPrefab.Length;
+            return segmentsPrefab[lastSegmentIndex];
+        }
+
         private void SpawnSegment()
         {
             GameObject newSegment = GameObject.Instantiate(
-                segmentPrefab.gameObject,
+                GetNextSegment().gameObject,
                 rb.position,
                 rb.rotation
             );

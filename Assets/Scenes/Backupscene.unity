@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.172768, g: 0.21589169, b: 0.29782546, a: 1}
+  m_IndirectSpecularColor: {r: 0.17276844, g: 0.21589246, b: 0.2978263, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -271,11 +271,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1791295302812980459, guid: 26189c7ec1975d942a563f347bee2472,
-        type: 3}
-      propertyPath: Loop
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3527243955594668112, guid: 26189c7ec1975d942a563f347bee2472,
         type: 3}
       propertyPath: m_Name
@@ -439,6 +434,32 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5865338239045265303}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1120137549 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4201493596132157842, guid: e1af106ff6eca3d4fa1955aaf3055f37,
+    type: 3}
+  m_PrefabInstance: {fileID: 5865338239045265303}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1831577548 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5865338238463475979, guid: e1af106ff6eca3d4fa1955aaf3055f37,
+    type: 3}
+  m_PrefabInstance: {fileID: 5865338239045265303}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1831577553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831577548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e80d2998db946ea4b973a42446650b05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleEffect: {fileID: 1120137549}
+  secondsBetweenSpawns: 1
 --- !u!1001 &343591717116001823
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -807,7 +828,7 @@ PrefabInstance:
     - target: {fileID: 780813266650995816, guid: 0a89015c946743e40a1118bb0434e796,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2174917529966544328, guid: 0a89015c946743e40a1118bb0434e796,
         type: 3}
@@ -933,11 +954,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1582466228043152471, guid: e1af106ff6eca3d4fa1955aaf3055f37,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4201493596132157842, guid: e1af106ff6eca3d4fa1955aaf3055f37,
         type: 3}
       propertyPath: playOnAwake
@@ -1102,7 +1118,7 @@ PrefabInstance:
     - target: {fileID: 6671643158895133529, guid: 52dc133c0d434d34293740184f2157d0,
         type: 3}
       propertyPath: hittablePrefabs.Array.size
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6671643158895133529, guid: 52dc133c0d434d34293740184f2157d0,
         type: 3}
@@ -1121,18 +1137,6 @@ PrefabInstance:
       propertyPath: hittablePrefabs.Array.data[2]
       value: 
       objectReference: {fileID: 8486048300828482805, guid: 0eff6a81ff51a034cbe95c20bdb7611a,
-        type: 3}
-    - target: {fileID: 6671643158895133529, guid: 52dc133c0d434d34293740184f2157d0,
-        type: 3}
-      propertyPath: hittablePrefabs.Array.data[3]
-      value: 
-      objectReference: {fileID: 8719723522268078196, guid: 2c8bda1415a75de4bb4a8d6c44d5b507,
-        type: 3}
-    - target: {fileID: 6671643158895133529, guid: 52dc133c0d434d34293740184f2157d0,
-        type: 3}
-      propertyPath: hittablePrefabs.Array.data[4]
-      value: 
-      objectReference: {fileID: 2167164507931934845, guid: 99dbf50b9eacfd042bf3ab6e9e4c1cc7,
         type: 3}
     - target: {fileID: 6671643158895133530, guid: 52dc133c0d434d34293740184f2157d0,
         type: 3}
