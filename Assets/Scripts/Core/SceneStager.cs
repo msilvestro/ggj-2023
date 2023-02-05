@@ -1,4 +1,5 @@
 using Cinemachine;
+using GGJ23.Audio;
 using UnityEngine;
 
 namespace GGJ23
@@ -22,6 +23,9 @@ namespace GGJ23
         [SerializeField]
         private GameObject[] objectsToDeactivate;
 
+        [SerializeField]
+        private PlaySoundEffects clickSfx;
+
         private void Update()
         {
             if (currentScene != SceneType.Menu)
@@ -30,6 +34,7 @@ namespace GGJ23
             }
             if (Input.anyKeyDown)
             {
+                clickSfx.Play();
                 menuVirtualCamera.Priority = -10;
                 foreach (GameObject objectToActivate in objectsToActivate)
                 {
@@ -39,6 +44,7 @@ namespace GGJ23
                 {
                     objectToDeactivate.SetActive(false);
                 }
+                currentScene = SceneType.Play;
             }
         }
     }

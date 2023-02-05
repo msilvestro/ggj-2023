@@ -1,74 +1,11 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4409504973525979392
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4409504973525979393}
-  - component: {fileID: 4409504973525979406}
-  - component: {fileID: 8436746206362271599}
-  m_Layer: 0
-  m_Name: Game Controller
-  m_TagString: GameController
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4409504973525979393
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4409504973525979392}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8332047754281814147}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4409504973525979406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4409504973525979392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2f134a886e874a44b843678a700bef8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  featureCreepCollection: {fileID: 11400000, guid: 97fc43a1bea3d544a830cf26de0e8ead,
-    type: 2}
-  yearsToAdd: 100
-  delaySfx: {fileID: 7613320649039338623}
---- !u!114 &8436746206362271599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4409504973525979392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8feac808d93718a49b878fb349d59659, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenuCanvas: {fileID: 0}
---- !u!1001 &5835683914499176828
+--- !u!1001 &602862502985567915
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 4409504973525979393}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2548442348965081599, guid: b773d37518a188b41b71cd7208d875f5,
         type: 3}
@@ -134,29 +71,11 @@ PrefabInstance:
         type: 3}
       propertyPath: clips.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: b885922aff7c0df48bf8dec981b005bf, type: 3}
+      objectReference: {fileID: 8300000, guid: 6112cb1df1b7776499a856036eb349f2, type: 3}
     - target: {fileID: 7285775707200774745, guid: b773d37518a188b41b71cd7208d875f5,
         type: 3}
       propertyPath: m_Name
-      value: Sfx
+      value: Click Sfx
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b773d37518a188b41b71cd7208d875f5, type: 3}
---- !u!114 &7613320649039338623 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4133021684171924739, guid: b773d37518a188b41b71cd7208d875f5,
-    type: 3}
-  m_PrefabInstance: {fileID: 5835683914499176828}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5632f5b91e6f4e243bb7e89c8601261d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &8332047754281814147 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2548442348965081599, guid: b773d37518a188b41b71cd7208d875f5,
-    type: 3}
-  m_PrefabInstance: {fileID: 5835683914499176828}
-  m_PrefabAsset: {fileID: 0}

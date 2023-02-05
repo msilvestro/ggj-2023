@@ -1,4 +1,5 @@
 using System;
+using GGJ23.Audio;
 using UnityEngine;
 
 namespace GGJ23
@@ -13,6 +14,9 @@ namespace GGJ23
 
         [SerializeField]
         private Canvas mainCanvas;
+
+        [SerializeField]
+        private PlaySoundEffects endSfx;
 
         private Root playerRoot;
 
@@ -37,6 +41,7 @@ namespace GGJ23
         {
             mainCanvas.gameObject.SetActive(false);
             youDelayedPanel.gameObject.SetActive(true);
+            endSfx.Play();
         }
     }
 }
