@@ -24,6 +24,9 @@ namespace GGJ23
         private GameObject[] objectsToDeactivate;
 
         [SerializeField]
+        private float deactivateAfterSeconds = 6f;
+
+        [SerializeField]
         private PlaySoundEffects clickSfx;
 
         private void Update()
@@ -40,11 +43,16 @@ namespace GGJ23
                 {
                     objectToActivate.SetActive(true);
                 }
-                foreach (GameObject objectToDeactivate in objectsToDeactivate)
-                {
-                    objectToDeactivate.SetActive(false);
-                }
+                Invoke(nameof(Deactivate), deactivateAfterSeconds);
                 currentScene = SceneType.Play;
+            }
+        }
+
+        private void Deactivate()
+        {
+            foreach (GameObject objectToDeactivate in objectsToDeactivate)
+            {
+                objectToDeactivate.SetActive(false);
             }
         }
     }
