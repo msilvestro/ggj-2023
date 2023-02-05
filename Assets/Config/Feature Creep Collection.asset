@@ -20,6 +20,11 @@ MonoBehaviour:
     - "\u201CThey should all HATE EACH OTHER OVER OUR GAME\u201D"
     - '"Cross-play?! Just buy my game twice, you bum!"'
     - '"Then they ALL have to buy our game!"'
+    - '"What do you mean we need a bigger server for a 50 people multiplayer?"'
+    - '"Toxic community? Add a tea-bag emote, that will fix it!"'
+    - '"You can tend to you virtual garden with your virtual friends!"'
+    - '"Yes, you can play with your family. No, there''s no local, just online..."'
+    - '"How can I make a walking simulator competitive?"'
   - title: Shop
     descriptions:
     - "\u201CI would like more money on my money, please!\u201D"
@@ -28,6 +33,11 @@ MonoBehaviour:
     - '"Pay to win or pay to play? This is the dilemma"'
     - '"We can use bottle caps as game currency! That''s original!"'
     - '"Yes, we accept grandmas as payment, thanks!"'
+    - '"And for this game currency the player can pay with real golden ingots"'
+    - '"What if we just change the colour of this skin? We could sell it 10 more
+      times!"'
+    - '"No refunds, ma''am! I don''t care your three-year-old stole your credit card!"'
+    - '"Yes, this game is free. Yes, it is pay to win"'
   - title: VR
     descriptions:
     - '"Players will enjoy seeing each pixel big as their head"'
@@ -35,14 +45,33 @@ MonoBehaviour:
     - '"I have to implement VR, can you lend me your potato PC?"'
     - '"The motion sickness is a feature to convey the life of a little seed"'
     - '"This will be realer than life itself!"'
+    - '"This is how the player will experience the true life of a carrot!"'
+    - '"Through the VR headset you can see a tree''s growth in real-time!"'
+    - '"Our players won''t be able to discern a real tree from these ones!"'
+    - '"No, I want it just like that episode from Rick and Morty!"'
+    - '"Is this real life? Or it''s just a fantas...-tic mesh?"'
   - title: Porting
     descriptions:
     - "\u201CThey should be able to run our game on their dishwasher!\u201D"
     - '"What if PS Vita will come back?"'
     - '"My game will rock on PS Plus!"'
     - '"What do you mean you can''t a toothbrush as controller"'
+    - '"Will Nintendo ever accept my application? What am I doing wrong?"'
+    - '"What do you mean PS players can''t use WASD key?"'
+    - '"This shovel is the new peripheral to dig yourself in the ground"'
+    - '"I will find a use for the DS pen in this fps!"'
+    - '"Yes, it will playable on the ATARI"'
+    - '"Yes, the PC version is free, too bad you just have a PS4..."'
   - title: Boss Fight
     descriptions:
     - '"Asylum Demon my ass!"'
     - '"Fighting this huge potato is very important to the plot"'
     - '"But without the fog the player won''t understand this is the boss fight!"'
+    - '"This boss fight can only be resolve with the parry, MUAHAHAHAH"'
+    - '"WOW! I spent just three hours selecting the perfect boss music! That''s a
+      record"'
+    - '"I''m designing the 10th phase of this epic boss! That''s groundbreaking!"'
+    - '"The butler was the boss fight all along!"'
+    - '"2020 is the final boss fight in my game"'
+    - '"BULLET SPOOOOONGE!"'
+    - '"The only way to beat it is to cheese it"'
