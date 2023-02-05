@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using GGJ23.Audio;
 using GGJ23.Core;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -29,9 +30,14 @@ namespace GGJ23
         [SerializeField]
         private PlaySoundEffects voiceSfx;
 
+        [SerializeField]
+        private string[] titlesToShow;
+
         private int timesHasBeenHit = 0;
         private Rigidbody rb;
         private Animator animator;
+
+        private DelayScore delayScore;
 
         public event Action<int> OnHit;
 
@@ -40,6 +46,11 @@ namespace GGJ23
             rb = GetComponent<Rigidbody>();
             animator = GetComponentInChildren<Animator>();
             trailRenderer.enabled = false;
+        }
+
+        private void Start()
+        {
+            delayScore = gameObject.GetGameController<DelayScore>();
         }
 
         private void FixedUpdate()
@@ -62,6 +73,7 @@ namespace GGJ23
             if (isFirstTime)
             {
                 voiceSfx.Play();
+                delayScore.Delay(titlesToShow);
             }
         }
 

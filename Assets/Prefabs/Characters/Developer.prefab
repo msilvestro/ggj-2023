@@ -86,6 +86,8 @@ MonoBehaviour:
   trailRenderer: {fileID: 256313829014603652}
   minimumVelocityToDisplayTrailRenderer: 0.4
   voiceSfx: {fileID: 8533858568522704847}
+  titlesToShow:
+  - Multiplayer
 --- !u!136 &4939723279053394911
 CapsuleCollider:
   m_ObjectHideFlags: 0

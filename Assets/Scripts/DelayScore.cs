@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace GGJ23
 {
@@ -41,8 +42,19 @@ namespace GGJ23
 
         public void Delay()
         {
-            AddYearsOfDelay(yearsToAdd);
             FeatureCreepData featureCreepData = featureCreepCollection.GetRandomFeatureCreepData();
+            Delay(featureCreepData);
+        }
+
+        public void Delay(string[] titles)
+        {
+            string title = titles[Random.Range(0, titles.Length)];
+            Delay(featureCreepCollection.GetFromTitle(title));
+        }
+
+        public void Delay(FeatureCreepData featureCreepData)
+        {
+            AddYearsOfDelay(yearsToAdd);
             string title = featureCreepData.title;
             string description = featureCreepData.GetRandomDescription();
             OnDelay.Invoke(title, description);

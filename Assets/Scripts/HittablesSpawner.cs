@@ -18,8 +18,6 @@ namespace GGJ23
 
         private Vector2 spawnArea;
 
-        private DelayScore delayScore;
-
         private void Awake()
         {
             spawnArea = new Vector2(terrainPlane.localScale.x * 10, terrainPlane.localScale.z * 10);
@@ -31,7 +29,6 @@ namespace GGJ23
             {
                 SpawnHittable();
             }
-            delayScore = gameObject.GetGameController<DelayScore>();
         }
 
         private void SpawnHittable()
@@ -56,7 +53,6 @@ namespace GGJ23
                 return;
             }
             SpawnHittable();
-            delayScore.Delay();
         }
     }
 }
