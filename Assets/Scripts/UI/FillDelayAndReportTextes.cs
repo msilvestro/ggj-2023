@@ -15,7 +15,7 @@ namespace GGJ23
         {
             DelayScore delayScore = gameObject.GetGameController<DelayScore>();
             int yearsOfDelay = delayScore.GetYearsOfDelay();
-            delayText.text = $"{yearsOfDelay} hours";
+            delayText.text = $"your game\nby {yearsOfDelay} years";
             reportText.text = delayScore.GetReport();
         }
     }

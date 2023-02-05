@@ -31,3 +31,9 @@ MonoBehaviour:
     descriptions:
     - '"Players will enjoy seeing each pixel big as their head"'
     - '"I spent 30 hours on those UV: THEY WILL SEE THEM IN FRONT OF THEIR NOSE"'
+  - title: Porting
+    descriptions:
+    - "\u201CThey should be able to run our game on their dishwasher!\u201D"
+  - title: Boss Fight
+    descriptions:
+    - '"Asylum Demon my ass!"'
