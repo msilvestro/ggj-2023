@@ -1209,6 +1209,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3882320576021289765, guid: 6e9b271d76869a14493969e826f6e3a3,
+        type: 3}
+      propertyPath: m_Name
+      value: Delay Sfx
+      objectReference: {fileID: 0}
     - target: {fileID: 4409504973525979392, guid: 6e9b271d76869a14493969e826f6e3a3,
         type: 3}
       propertyPath: m_Name

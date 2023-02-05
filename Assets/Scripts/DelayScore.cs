@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using GGJ23.Audio;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -20,6 +21,9 @@ namespace GGJ23
 
         [SerializeField]
         private Dictionary<string, int> featureCreepToYears = new();
+
+        [SerializeField]
+        private PlaySoundEffects delaySfx;
 
         private void Awake()
         {
@@ -59,6 +63,7 @@ namespace GGJ23
             string description = featureCreepData.GetRandomDescription();
             OnDelay.Invoke(title, description);
             featureCreepToYears[title] += yearsToAdd;
+            delaySfx.Play();
         }
 
         public int GetYearsOfDelay()
