@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2524141404756790528
 RectTransform:
   m_ObjectHideFlags: 0
@@ -704,8 +704,9 @@ MonoBehaviour:
 
     Shop:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7f67994cd4f1d2c4f837661841e1492d, type: 2}
+  m_sharedMaterial: {fileID: 3186446834383236484, guid: 7f67994cd4f1d2c4f837661841e1492d,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -865,8 +866,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -976,8 +977,9 @@ MonoBehaviour:
   m_text: "[n\xB0 Multiplayer]\n[n\xB0 Porting]\n[n\xB0 VR]\n[n\xB0 Boss Fight]\n[n\xB0
     Shop]"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7f67994cd4f1d2c4f837661841e1492d, type: 2}
+  m_sharedMaterial: {fileID: 3186446834383236484, guid: 7f67994cd4f1d2c4f837661841e1492d,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
