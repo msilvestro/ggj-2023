@@ -67,6 +67,11 @@ namespace GGJ23
 
         private void EndGame()
         {
+            moveSpeed = 0;
+            foreach (Transform child in transform)
+            {
+                child.gameObject.SetActive(false);
+            }
             OnGameEnd.Invoke();
         }
 

@@ -37,7 +37,6 @@ namespace GGJ23
         {
             mainCanvas.gameObject.SetActive(false);
             youDelayedPanel.gameObject.SetActive(true);
-            Time.timeScale = 0;
         }
     }
 }
