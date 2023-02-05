@@ -1118,7 +1118,7 @@ PrefabInstance:
     - target: {fileID: 6671643158895133529, guid: 52dc133c0d434d34293740184f2157d0,
         type: 3}
       propertyPath: hittablePrefabs.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6671643158895133529, guid: 52dc133c0d434d34293740184f2157d0,
         type: 3}
@@ -1131,6 +1131,12 @@ PrefabInstance:
       propertyPath: hittablePrefabs.Array.data[1]
       value: 
       objectReference: {fileID: 5976944482606508296, guid: a8a20af4ac5d5c74fa486854b16129e1,
+        type: 3}
+    - target: {fileID: 6671643158895133529, guid: 52dc133c0d434d34293740184f2157d0,
+        type: 3}
+      propertyPath: hittablePrefabs.Array.data[2]
+      value: 
+      objectReference: {fileID: 8486048300828482805, guid: 0eff6a81ff51a034cbe95c20bdb7611a,
         type: 3}
     - target: {fileID: 6671643158895133530, guid: 52dc133c0d434d34293740184f2157d0,
         type: 3}
