@@ -9,14 +9,18 @@ namespace GGJ23
         private TMP_Text delayText;
 
         [SerializeField]
-        private TMP_Text reportText;
+        private TMP_Text reportTitleText;
+
+        [SerializeField]
+        private TMP_Text reportYearsText;
 
         private void Start()
         {
             DelayScore delayScore = gameObject.GetGameController<DelayScore>();
             int yearsOfDelay = delayScore.GetYearsOfDelay();
             delayText.text = $"your game\nby {yearsOfDelay} years";
-            reportText.text = delayScore.GetReport();
+            reportTitleText.text = delayScore.GetReportTitles();
+            reportYearsText.text = delayScore.GetReportYears();
         }
     }
 }
