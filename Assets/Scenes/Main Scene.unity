@@ -906,40 +906,15 @@ PrefabInstance:
       propertyPath: m_Lens.FieldOfView
       value: 85
       objectReference: {fileID: 0}
-    - target: {fileID: 343591717372652501, guid: 5ef1ae828b0cfac4e85ab81275270d7e,
+    - target: {fileID: 343591717372652500, guid: 5ef1ae828b0cfac4e85ab81275270d7e,
         type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 343591717372652501, guid: 5ef1ae828b0cfac4e85ab81275270d7e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 10.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 343591717372652501, guid: 5ef1ae828b0cfac4e85ab81275270d7e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9892682
-      objectReference: {fileID: 0}
-    - target: {fileID: 343591717372652501, guid: 5ef1ae828b0cfac4e85ab81275270d7e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.14611149
-      objectReference: {fileID: 0}
-    - target: {fileID: 343591717372652501, guid: 5ef1ae828b0cfac4e85ab81275270d7e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.000000017021724
-      objectReference: {fileID: 0}
-    - target: {fileID: 343591717372652501, guid: 5ef1ae828b0cfac4e85ab81275270d7e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.0000000025140499
+      propertyPath: m_CameraType
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 343591717372652502, guid: 5ef1ae828b0cfac4e85ab81275270d7e,
         type: 3}
-      propertyPath: field of view
-      value: 60
+      propertyPath: m_FocalLength
+      value: 20.78461
       objectReference: {fileID: 0}
     - target: {fileID: 1159827561393084624, guid: 5ef1ae828b0cfac4e85ab81275270d7e,
         type: 3}
