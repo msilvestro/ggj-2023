@@ -1,4 +1,5 @@
 using System;
+using GGJ23.Audio;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -15,6 +16,9 @@ namespace GGJ23
         private string[] leftTextLines;
         private string[] rightTextLines;
 
+        [SerializeField]
+        private PlaySoundEffects shotgunSfx;
+
         private int lineIndex = 0;
 
         private void Awake()
@@ -22,6 +26,11 @@ namespace GGJ23
             leftTextLines = leftText.text.Split("\n");
             rightTextLines = rightText.text.Split("\n");
             ShowCurrentLines();
+        }
+
+        private void Start()
+        {
+            shotgunSfx.Play();
         }
 
         private void ShowCurrentLines()
@@ -48,6 +57,7 @@ namespace GGJ23
                     return;
                 }
                 ShowCurrentLines();
+                shotgunSfx.Play();
             }
         }
     }
