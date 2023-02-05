@@ -49,8 +49,8 @@ MonoBehaviour:
   musicAudioSource: {fileID: 1791295302812980459}
   sfxAudioSource: {fileID: 4129526694179902378}
   minTimeBetweenSfxs: 0.1
-  backgroundMusic: {fileID: 0}
-  musicVolume: 1
+  backgroundMusic: {fileID: 8300000, guid: dd28fefc473195b4abb6e413701c1610, type: 3}
+  musicVolume: 0.1
   hasIntro: 0
   startLoopTime: 0
   endLoopTime: 0
@@ -69,7 +69,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
