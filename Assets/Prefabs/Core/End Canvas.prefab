@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 8064601761040167866}
   - component: {fileID: 5857944458955224229}
   - component: {fileID: 7739409712850506453}
-  - component: {fileID: 8945280926671248870}
+  - component: {fileID: 6716687942272790696}
   m_Layer: 5
   m_Name: Report Panel
   m_TagString: Untagged
@@ -371,7 +371,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8945280926671248870
+--- !u!114 &6716687942272790696
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -380,10 +380,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3924409920673865248}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d2411fd8525f66419c3e971020da9ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 7288317fb346f544eb04f453418f9e3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Main Scene
+  leftText: {fileID: 955933456097463594}
+  rightText: {fileID: 286556960672456568}
 --- !u!1 &4071430388667230851
 GameObject:
   m_ObjectHideFlags: 0
