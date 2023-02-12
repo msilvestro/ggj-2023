@@ -91,7 +91,7 @@ namespace GGJ23
             Hittable hittable = other.gameObject.GetComponent<Hittable>();
             if (hittable == null)
                 return;
-            hittable.Hit(out bool isFirstTime);
+            hittable.Hit(rb.rotation, out bool isFirstTime);
             if (isFirstTime)
             {
                 segmentSpawner.IncreaseSegmentsCount(hittable.GetSegmentsToAddOnHit());

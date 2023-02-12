@@ -33,6 +33,10 @@ namespace GGJ23
         [SerializeField]
         private string[] titlesToShow;
 
+        [Space]
+        [SerializeField]
+        private bool onlyThrowForward = false;
+
         private int timesHasBeenHit = 0;
         private Rigidbody rb;
         private Animator animator;
@@ -58,13 +62,20 @@ namespace GGJ23
             trailRenderer.enabled = rb.velocity.magnitude > minimumVelocityToDisplayTrailRenderer;
         }
 
-        public void Hit(out bool isFirstTime)
+        public void Hit(Quaternion hitterRotation, out bool isFirstTime)
         {
             timesHasBeenHit += 1;
             isFirstTime = timesHasBeenHit == 1;
             animator.SetTrigger("hit");
             trailRenderer.enabled = true;
-            ThrowInTheAir();
+            if (onlyThrowForward)
+            {
+                ThrowInTheAir(hitterRotation);
+            }
+            else
+            {
+                ThrowInTheAir();
+            }
             OnHit.Invoke(timesHasBeenHit);
             if (isFirstTime && destroyAfterHit)
             {
@@ -80,6 +91,14 @@ namespace GGJ23
         public int GetSegmentsToAddOnHit()
         {
             return segmentsToAddOnHit;
+        }
+
+        private void ThrowInTheAir(Quaternion hitterRotation)
+        {
+            rb.constraints = RigidbodyConstraints.None;
+            Vector3 resultDirection =
+                hitterRotation * (new Vector3(Random.Range(-1f, 1f), 1, Random.Range(0, 1f)));
+            rb.AddForce(resultDirection.normalized * hitForceMagnitude, ForceMode.Impulse);
         }
 
         private void ThrowInTheAir()
