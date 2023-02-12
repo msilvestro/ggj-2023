@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Pool;
 
 namespace GGJ23
 {
@@ -19,6 +20,7 @@ namespace GGJ23
         private Vector3 lastSpawnPosition;
 
         private int lastSegmentIndex = -1;
+        private IObjectPool<GameObject> segmentsPool;
 
         private void Awake()
         {
@@ -26,6 +28,14 @@ namespace GGJ23
             despawningSegmentsContainer = new GameObject("Despawning Segments Container");
             rb = GetComponent<Rigidbody>();
             lastSpawnPosition = rb.position;
+            segmentsPool = new LinkedPool<GameObject>(
+                createFunc: CreateSegment,
+                actionOnGet: OnTakeSegment,
+                actionOnRelease: OnReturnedSegment,
+                actionOnDestroy: OnDestroySegment,
+                collectionCheck: true,
+                maxSize: 10_000
+            );
         }
 
         private void FixedUpdate()
@@ -44,7 +54,11 @@ namespace GGJ23
 
         private void AddHeadSegment()
         {
-            GameObject newSegment = CreateSegment();
+            GameObject newSegment = segmentsPool.Get();
+            newSegment.transform.position = rb.position;
+            newSegment.transform.rotation = rb.rotation;
+            newSegment.transform.parent = segmentsContainer.transform;
+            lastSpawnPosition = rb.position;
             if (segmentsContainer.transform.childCount > segmentsCount)
             {
                 StartLastSegmentDespawn();
@@ -54,14 +68,9 @@ namespace GGJ23
 
         private GameObject CreateSegment()
         {
-            GameObject newSegment = GameObject.Instantiate(
-                GetNextSegment().gameObject,
-                rb.position,
-                rb.rotation
-            );
-            newSegment.transform.parent = segmentsContainer.transform;
-            lastSpawnPosition = rb.position;
-            newSegment.GetComponent<Segment>().OnDespawnEnd += () => Destroy(newSegment);
+            GameObject newSegment = GameObject.Instantiate(GetNextSegment().gameObject);
+            newSegment.GetComponent<Segment>().OnDespawnEnd += () =>
+                segmentsPool.Release(newSegment);
             return newSegment;
         }
 
@@ -88,5 +97,22 @@ namespace GGJ23
         {
             segmentsCount += newSegments;
         }
+
+#region Extra pool functions
+        private void OnTakeSegment(GameObject segment)
+        {
+            segment.SetActive(true);
+        }
+
+        private void OnReturnedSegment(GameObject segment)
+        {
+            segment.SetActive(false);
+        }
+
+        private void OnDestroySegment(GameObject segment)
+        {
+            Destroy(segment);
+        }
     }
+#endregion
 }
