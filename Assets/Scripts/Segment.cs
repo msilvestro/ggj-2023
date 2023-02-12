@@ -38,6 +38,7 @@ namespace GGJ23
         public void EndDespawn()
         {
             OnDespawnEnd?.Invoke();
+            animator.ResetTrigger("despawn");
             if (destroyOnDespawnEnd)
             {
                 Destroy(gameObject);
