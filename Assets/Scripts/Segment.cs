@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace GGJ23
@@ -7,7 +8,12 @@ namespace GGJ23
         [SerializeField]
         private int segmentNumber = 0;
 
+        [SerializeField]
+        private bool destroyOnDespawnEnd = false;
+
         private Animator animator;
+
+        public event Action OnDespawnEnd;
 
         private void Awake()
         {
@@ -26,12 +32,16 @@ namespace GGJ23
 
         public void Despawn()
         {
-            animator.SetTrigger("destroy");
+            animator.SetTrigger("despawn");
         }
 
-        public void Destroy()
+        public void EndDespawn()
         {
-            Destroy(gameObject);
+            OnDespawnEnd?.Invoke();
+            if (destroyOnDespawnEnd)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

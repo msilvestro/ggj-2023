@@ -85,6 +85,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   segmentNumber: 0
+  destroyOnDespawnEnd: 1
 --- !u!65 &1595876911476942999
 BoxCollider:
   m_ObjectHideFlags: 0
