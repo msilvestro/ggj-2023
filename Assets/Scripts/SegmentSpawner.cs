@@ -11,7 +11,7 @@ namespace GGJ23
         private float spawnDistance = 1f;
 
         [SerializeField]
-        private int maxNumberOfSegments = 10;
+        private int segmentsCount = 10;
 
         private GameObject segmentsContainer;
         private GameObject despawningSegmentsContainer;
@@ -32,7 +32,7 @@ namespace GGJ23
         {
             if (Vector3.Distance(lastSpawnPosition, rb.position) >= spawnDistance)
             {
-                SpawnSegment();
+                AddHeadSegment();
             }
         }
 
@@ -42,7 +42,17 @@ namespace GGJ23
             return segmentsPrefab[lastSegmentIndex];
         }
 
-        private void SpawnSegment()
+        private void AddHeadSegment()
+        {
+            GameObject newSegment = CreateSegment();
+            if (segmentsContainer.transform.childCount > segmentsCount)
+            {
+                StartLastSegmentDespawn();
+            }
+            UpdateSegmentNumbers();
+        }
+
+        private GameObject CreateSegment()
         {
             GameObject newSegment = GameObject.Instantiate(
                 GetNextSegment().gameObject,
@@ -51,12 +61,20 @@ namespace GGJ23
             );
             newSegment.transform.parent = segmentsContainer.transform;
             lastSpawnPosition = rb.position;
-            if (segmentsContainer.transform.childCount > maxNumberOfSegments)
-            {
-                Transform segmentToDespawn = segmentsContainer.transform.GetChild(0);
-                segmentToDespawn.GetComponent<Segment>().Despawn();
-                segmentToDespawn.parent = despawningSegmentsContainer.transform;
-            }
+            newSegment.GetComponent<Segment>().OnDespawnEnd += () => Destroy(newSegment);
+            return newSegment;
+        }
+
+        private void StartLastSegmentDespawn()
+        {
+            Transform segmentToDespawn = segmentsContainer.transform.GetChild(0);
+            Segment segment = segmentToDespawn.GetComponent<Segment>();
+            segment.Despawn();
+            segmentToDespawn.parent = despawningSegmentsContainer.transform;
+        }
+
+        private void UpdateSegmentNumbers()
+        {
             for (int i = 0; i < segmentsContainer.transform.childCount; i++)
             {
                 segmentsContainer.transform
@@ -66,9 +84,9 @@ namespace GGJ23
             }
         }
 
-        public void AddSegments(int newSegments)
+        public void IncreaseSegmentsCount(int newSegments)
         {
-            maxNumberOfSegments += newSegments;
+            segmentsCount += newSegments;
         }
     }
 }

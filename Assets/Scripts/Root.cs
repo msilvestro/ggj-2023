@@ -94,7 +94,7 @@ namespace GGJ23
             hittable.Hit(out bool isFirstTime);
             if (isFirstTime)
             {
-                segmentSpawner.AddSegments(hittable.GetSegmentsToAddOnHit());
+                segmentSpawner.IncreaseSegmentsCount(hittable.GetSegmentsToAddOnHit());
             }
         }
     }
