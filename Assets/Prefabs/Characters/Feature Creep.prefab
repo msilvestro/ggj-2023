@@ -114,6 +114,7 @@ MonoBehaviour:
   segmentsPrefab:
   - {fileID: 1694803638782750224, guid: ac4f388194cbc67479fbbe7e1c6fa5eb, type: 3}
   - {fileID: 8759856453817700554, guid: 5834a7853430e4b4fbcd61143f5fdf99, type: 3}
+  - {fileID: 1008746049876952778, guid: 4a79f97b2631ff647b12ade98ec611e4, type: 3}
   spawnDistance: 0.7
   maxNumberOfSegments: 10
 --- !u!135 &9142542441335397401
